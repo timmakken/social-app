@@ -1,22 +1,25 @@
-// On empty db add sample
-if(Posts.find().count() === 0) {
-
+if (Posts.find().count() === 0) {
 	Posts.insert({
-	 title: 'Introducing Social App',
-	 author: 'Tim Makken',
-	 url: 'htpp://lynu.nl'
+		title: 'Introducing Social App',
+		author: 'Tim Makken',
+		url: 'http://lynu.nl'
 	});
 
 	Posts.insert({
-	 title: 'Meteor',
-	 author: 'Tom Coleman',
-	 url: 'htpp://meteor.com'
+		title: 'Inspired by Telescope',
+		author: 'Sacha Greif',
+		url: 'http://sachagreif.com/introducing-telescope/'
 	});
 
 	Posts.insert({
-	 title: 'The Meteor Book',
-	 author: 'Sacha Greif',
-	 url: 'htpp://themeteorbook.com'
+		title: 'Meteor',
+		author: 'Tom Coleman',
+		url: 'http://meteor.com'
 	});
 
+	Posts.insert({
+		title: 'The Meteor Book',
+		author: 'Tom Coleman',
+		url: 'http://themeteorbook.com'
+	});
 }
